@@ -21,7 +21,7 @@ A lightweight, terminal-inspired task management application built with vanilla 
 
 ### The Problem
 
-Modern task management applications face several critical issues that limit their effectiveness and accessibility:
+Modern task management applications face several critical issues that limit their effectiveness and accessibility :
 
 **Complexity & Feature Bloat**
 - Overwhelming interfaces with unnecessary features that distract from core functionality
@@ -47,9 +47,9 @@ Modern task management applications face several critical issues that limit thei
 - Vendor-specific hosting requirements limiting deployment options
 - Difficult to self-host or customize
 
-### The Solution: TaskFlow Pro
+### The Solution : TaskFlow Pro
 
-TaskFlow Pro is designed to eliminate these problems through a radically simplified approach:
+TaskFlow Pro is designed to eliminate these problems through a radically simplified approach :
 
 **Simplicity & Focus**
 - Clean, distraction-free interface with only essential features
@@ -77,7 +77,7 @@ TaskFlow Pro is designed to eliminate these problems through a radically simplif
 
 ### Core Idea
 
-Build a professional task management system as a **single HTML file** that:
+Build a professional task management system as a **single HTML file** that :
 1. Operates entirely client-side in the browser
 2. Stores all data locally using browser LocalStorage API
 3. Requires zero backend infrastructure or databases
@@ -93,8 +93,8 @@ Build a professional task management system as a **single HTML file** that:
 
 **Create Tasks**
 - Add new tasks with comprehensive details
-- Required fields: Task title
-- Optional fields: Description, start/due dates, time estimates, priority, status, tags, assignee, project
+- Required fields : Task title
+- Optional fields : Description, start/due dates, time estimates, priority, status, tags, assignee, project
 
 **View Tasks**
 - Display all tasks in organized, scannable list
@@ -117,7 +117,7 @@ Build a professional task management system as a **single HTML file** that:
 
 ### Dashboard Analytics
 
-**Real-Time Statistics** (5 key metrics automatically calculated):
+**Real-Time Statistics** (5 key metrics automatically calculated) :
 
 **Total Tasks** - Complete count of all tasks in the system
 
@@ -137,9 +137,9 @@ Build a professional task management system as a **single HTML file** that:
 - Case-insensitive matching for user convenience
 
 **Filter Options**
-- **Status Filter**: To Do, In Progress, Completed, Blocked
-- **Priority Filter**: Low, Medium, High, Critical
-- **Project Filter**: Dynamically populated based on your projects
+- **Status Filter** : To Do, In Progress, Completed, Blocked
+- **Priority Filter** : Low, Medium, High, Critical
+- **Project Filter** : Dynamically populated based on your projects
 - Multiple filters combine with AND logic
 
 **Sort Capabilities**
@@ -151,16 +151,16 @@ Build a professional task management system as a **single HTML file** that:
 ### Task Properties
 
 **Status Types**
-- **To Do**: Tasks not yet started
-- **In Progress**: Currently active tasks
-- **Completed**: Finished tasks
-- **Blocked**: Tasks that cannot proceed due to dependencies
+- **To Do** : Tasks not yet started
+- **In Progress** : Currently active tasks
+- **Completed** : Finished tasks
+- **Blocked** : Tasks that cannot proceed due to dependencies
 
 **Priority Levels** (color-coded for visual scanning)
-- **Low**: Standard priority tasks (cyan)
-- **Medium**: Normal priority (green)
-- **High**: Important tasks requiring attention (yellow with border)
-- **Critical**: Urgent tasks needing immediate action (magenta with border)
+- **Low** : Standard priority tasks (cyan)
+- **Medium** : Normal priority (green)
+- **High** : Important tasks requiring attention (yellow with border)
+- **Critical** : Urgent tasks needing immediate action (magenta with border)
 
 **Time Tracking**
 - Start date and due date fields
@@ -235,7 +235,7 @@ Build a professional task management system as a **single HTML file** that:
 
 **Vanilla JavaScript (ES6+)**
 - Zero frameworks or external libraries
-- Modern ECMAScript features:
+- Modern ECMAScript features :
   - Arrow functions for concise syntax
   - Template literals for string manipulation
   - Array methods (map, filter, reduce, sort)
@@ -297,9 +297,9 @@ TaskFlow Pro uses a **client-side static architecture** where all processing hap
 │  │  ┌─────────────────────────────────────────────────────┐  │ │
 │  │  │          Browser LocalStorage API                   │  │ │
 │  │  │  • Stores tasks as JSON string                      │  │ │
-│  │  │  • Key: 'taskflow-tasks'                            │  │ │
+│  │  │  • Key : 'taskflow-tasks'                            │  │ │
 │  │  │  • Persists across sessions                         │  │ │
-│  │  │  • Capacity: ~5-10MB                                │  │ │
+│  │  │  • Capacity : ~5-10MB                                │  │ │
 │  │  └─────────────────────────────────────────────────────┘  │ │
 │  └───────────────────────────────────────────────────────────┘ │
 └────────────────────────────────────────────────────────────────┘
@@ -358,11 +358,11 @@ TaskFlow Pro is deployed on a **custom Ubuntu 24 VPS** using **Nginx web server*
 
 ### Server Specifications
 
-**Operating System:** Ubuntu 24.04 LTS  
-**Web Server:** Nginx 1.24+  
-**SSL Provider:** Let's Encrypt (Certbot)  
-**Server IP:** 54.227.118.239  
-**Server Identifier:** 6941-web-02  
+**Operating System :** Ubuntu 24.04 LTS  
+**Web Server :** Nginx 1.24+  
+**SSL Provider :** Let's Encrypt (Certbot)  
+**Server IP :** 54.227.118.239  
+**Server Identifier :** 6941-web-02  
 
 ### Deployment Architecture
 
@@ -388,17 +388,17 @@ Browser receives index.html
 
 ## Running Locally
 
-1. Clone the repository:
+1. Clone the repository :
 ```
-git clone https://github.com/banituze/taskflow.git
+git clone https ://github.com/banituze/taskflow.git
 ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory :
 ```
 cd taskflow
 ```
 
-3. Open `index.html` in your browser or use a local server:
+3. Open `index.html` in your browser or use a local server :
 ```
 # Using Python
 python -m http.server 8000
@@ -407,13 +407,13 @@ python -m http.server 8000
 npx serve
 ```
 
-4. Visit `http://localhost:8000` in your browser
+4. Visit `http ://localhost :8000` in your browser
 
 ## Hosting Platform Rationale
 
 ### Why Custom VPS + Nginx?
 
-**Decision: Ubuntu VPS with Nginx web server**
+**Decision : Ubuntu VPS with Nginx web server**
 
 After evaluating multiple hosting options, a custom VPS deployment was chosen over managed platforms like Netlify, Vercel, or GitHub Pages.
 
@@ -477,21 +477,21 @@ After evaluating multiple hosting options, a custom VPS deployment was chosen ov
 
 ### Why Not Managed Platforms?
 
-**Netlify/Vercel Limitations:**
+**Netlify/Vercel Limitations :**
 - Cannot add custom HTTP headers easily
 - Limited server configuration options
 - Black-box deployment process
 - Less learning about infrastructure
 - Platform-specific features create lock-in
 
-**GitHub Pages Limitations:**
+**GitHub Pages Limitations :**
 - No custom server configuration
 - Limited to Jekyll static site generation
 - Cannot use custom headers
 - No server-side redirects (must use JavaScript)
 - Less professional for portfolio
 
-**AWS S3 Static Hosting:**
+**AWS S3 Static Hosting :**
 - More complex than nginx for single file
 - Higher learning curve for beginners
 - Less transparent than VPS
@@ -499,7 +499,7 @@ After evaluating multiple hosting options, a custom VPS deployment was chosen ov
 
 ### Alignment with Assignment Goals
 
-This deployment method demonstrates understanding of:
+This deployment method demonstrates understanding of :
 
 1. **Browser** - How browsers request and render HTML
 2. **DNS** - Domain name resolution to IP addresses
@@ -518,22 +518,22 @@ The VPS + Nginx approach provides **deeper infrastructure knowledge** than manag
 
 ### 1. Single-File Architecture
 
-**Choice:** Entire application in one HTML file
+**Choice  :** Entire application in one HTML file
 
-**Rationale:**
-- **Maximum Portability**: One file contains full application - no dependencies to manage
-- **Zero Build Process**: No webpack, Babel, or compilation needed
-- **Easy Distribution**: Share via email, USB, or any file transfer method
-- **Offline First**: Works immediately without internet after initial download
-- **Simple Version Control**: One file = one commit = clear history
-- **No Dependency Hell**: Zero npm packages means zero security vulnerabilities
+**Rationale  :**
+- **Maximum Portability**  : One file contains full application - no dependencies to manage
+- **Zero Build Process**  : No webpack, Babel, or compilation needed
+- **Easy Distribution**  : Share via email, USB, or any file transfer method
+- **Offline First**  : Works immediately without internet after initial download
+- **Simple Version Control**  : One file = one commit = clear history
+- **No Dependency Hell**  : Zero npm packages means zero security vulnerabilities
 
-**Trade-offs Accepted:**
+**Trade-offs Accepted  :**
 - Larger initial file size (~45KB vs ~5KB split)
 - Less modular code organization
 - More challenging for team collaboration on same file
 
-**Why It Works:**
+**Why It Works  :**
 - Modern browsers handle 100KB files trivially
 - Gzip compression reduces transfer size by ~70%
 - User convenience outweighs developer preferences
@@ -543,56 +543,56 @@ The VPS + Nginx approach provides **deeper infrastructure knowledge** than manag
 
 ### 2. LocalStorage for Data Persistence
 
-**Choice:** Browser LocalStorage instead of server database
+**Choice :** Browser LocalStorage instead of server database
 
-**Rationale:**
-- **Complete Privacy**: Data never leaves user's device - zero server exposure
-- **Zero Operating Costs**: No database servers, no backend infrastructure to maintain
-- **Instant Operations**: No network latency - all operations are local
-- **Offline by Default**: Application works without internet connection
-- **No Authentication**: Simplifies user experience - no login required
-- **Simple Implementation**: Native browser API - no ORM or database drivers
+**Rationale :**
+- **Complete Privacy** : Data never leaves user's device - zero server exposure
+- **Zero Operating Costs** : No database servers, no backend infrastructure to maintain
+- **Instant Operations** : No network latency - all operations are local
+- **Offline by Default** : Application works without internet connection
+- **No Authentication** : Simplifies user experience - no login required
+- **Simple Implementation** : Native browser API - no ORM or database drivers
 
-**Assumptions:**
+**Assumptions :**
 - Users manage their own task data
 - Single-user use case (not collaborative)
 - Users comfortable with browser-based storage
 - Data size remains under 5MB (LocalStorage limit)
 - Users primarily work from same device/browser
 
-**Limitations Acknowledged:**
+**Limitations Acknowledged :**
 - No cross-device synchronization
 - No real-time team collaboration
 - Data lost if browser cache cleared (user must backup)
 - Browser-specific storage (Firefox data ≠ Chrome data)
 
-**Mitigation Strategies:**
+**Mitigation Strategies :**
 - Clear documentation about data storage
 - Browser console export/import capabilities
-- Future enhancement: JSON export/import UI
+- Future enhancement : JSON export/import UI
 - Recommend regular backups for critical data
 
 ---
 
 ### 3. Matrix Terminal Aesthetic
 
-**Choice:** Green-on-black retro terminal theme
+**Choice :** Green-on-black retro terminal theme
 
-**Rationale:**
-- **Distinctive Brand**: Memorable, stands out from standard interfaces
-- **Developer Appeal**: Targets tech-savvy audience
-- **Reduced Eye Strain**: Dark theme easier on eyes for extended use
-- **OLED Friendly**: Black pixels save battery on OLED screens
-- **Nostalgia Factor**: Appeals to those who grew up with terminals
-- **Professional Edge**: Serious, focused, no-nonsense appearance
+**Rationale :**
+- **Distinctive Brand** : Memorable, stands out from standard interfaces
+- **Developer Appeal** : Targets tech-savvy audience
+- **Reduced Eye Strain** : Dark theme easier on eyes for extended use
+- **OLED Friendly** : Black pixels save battery on OLED screens
+- **Nostalgia Factor** : Appeals to those who grew up with terminals
+- **Professional Edge** : Serious, focused, no-nonsense appearance
 
-**Design Psychology:**
+**Design Psychology :**
 - High contrast = better readability
 - Monospace fonts = data/code aesthetic
 - Terminal theme = productivity focus
 - Green color = associated with terminals, "go", success
 
-**User Experience:**
+**User Experience :**
 - Clear visual hierarchy with boxes and borders
 - Color coding for priority levels
 - Status badges for quick scanning
@@ -602,23 +602,23 @@ The VPS + Nginx approach provides **deeper infrastructure knowledge** than manag
 
 ### 4. Client-Side Only Architecture
 
-**Choice:** No backend server or API
+**Choice :** No backend server or API
 
-**Assumptions:**
-- **Browser Environment**: Users have modern browsers (Chrome 60+, Firefox 55+, Safari 11+)
-- **JavaScript Enabled**: 99%+ of users have JS enabled
-- **LocalStorage Available**: Native API present in all modern browsers
-- **Single User Workflow**: No team collaboration features needed
-- **Privacy Priority**: Users value data control over cloud sync
+**Assumptions :**
+- **Browser Environment** : Users have modern browsers (Chrome 60+, Firefox 55+, Safari 11+)
+- **JavaScript Enabled** : 99%+ of users have JS enabled
+- **LocalStorage Available** : Native API present in all modern browsers
+- **Single User Workflow** : No team collaboration features needed
+- **Privacy Priority** : Users value data control over cloud sync
 
-**Benefits:**
-- **Free Hosting**: Static files cost nothing to serve
-- **Infinite Scalability**: CDN can handle millions of users
-- **Zero Maintenance**: No servers to patch or databases to backup
-- **Complete Offline**: Works without internet after initial load
-- **No Downtime**: No backend means no backend outages
+**Benefits :**
+- **Free Hosting** : Static files cost nothing to serve
+- **Infinite Scalability** : CDN can handle millions of users
+- **Zero Maintenance** : No servers to patch or databases to backup
+- **Complete Offline** : Works without internet after initial load
+- **No Downtime** : No backend means no backend outages
 
-**Limitations:**
+**Limitations :**
 - No server-side validation or business logic
 - No user authentication or access control
 - No real-time collaboration features
@@ -628,33 +628,33 @@ The VPS + Nginx approach provides **deeper infrastructure knowledge** than manag
 
 ### 5. VPS + Nginx Hosting
 
-**Choice:** Self-managed VPS with Nginx over managed platforms
+**Choice :** Self-managed VPS with Nginx over managed platforms
 
-**Rationale:**
-- **Learning Opportunity**: Hands-on experience with real infrastructure
-- **Full Customization**: Control over headers, redirects, caching, etc.
-- **Professional Experience**: Industry-standard tools and practices
-- **Portfolio Value**: Demonstrates DevOps/infrastructure skills
-- **No Vendor Lock-In**: Own the infrastructure, can migrate anywhere
-- **Multiple Use Cases**: Can host other projects on same server
+**Rationale :**
+- **Learning Opportunity** : Hands-on experience with real infrastructure
+- **Full Customization** : Control over headers, redirects, caching, etc.
+- **Professional Experience** : Industry-standard tools and practices
+- **Portfolio Value** : Demonstrates DevOps/infrastructure skills
+- **No Vendor Lock-In** : Own the infrastructure, can migrate anywhere
+- **Multiple Use Cases** : Can host other projects on same server
 
-**Compared to Alternatives:**
+**Compared to Alternatives :**
 ```
-GitHub Pages:
+GitHub Pages :
   ✓ Free
   ✓ Easy setup
   ✗ No custom headers
   ✗ Limited configuration
   ✗ Less learning value
 
-Netlify:
+Netlify :
   ✓ Free tier
   ✓ Instant deploys
   ✗ Platform lock-in
   ✗ Black box deployment
   ✗ Limited customization
 
-VPS + Nginx:
+VPS + Nginx :
   ✓ Complete control
   ✓ Maximum learning
   ✓ Professional tools
@@ -666,21 +666,21 @@ VPS + Nginx:
 
 ### 6. Target Audience Assumptions
 
-**Primary Users:**
+**Primary Users :**
 - Individual developers and designers
 - Freelancers and solo entrepreneurs
 - Privacy-conscious individuals
 - Students learning project management
 - Anyone wanting simple task tracking
 
-**Use Cases:**
+**Use Cases :**
 - Personal to-do lists and task tracking
 - Project planning and time estimation
 - Sprint planning for solo projects
 - Bug tracking and issue management
 - Learning task management concepts
 
-**Not Designed For:**
+**Not Designed For :**
 - Large teams (no collaboration features)
 - Enterprises (no SSO, admin panels, or audit logs)
 - Multi-device workflows (no cloud sync)
@@ -691,7 +691,7 @@ VPS + Nginx:
 
 ### 7. Security & Privacy Considerations
 
-**XSS Prevention:**
+**XSS Prevention :**
 ```
 // All user input is escaped before rendering
 function escapeHtml(text) {
@@ -704,20 +704,20 @@ function escapeHtml(text) {
 taskCard.innerHTML = `<h3>${escapeHtml(task.title)}</h3>`;
 ```
 
-**Privacy Guarantees:**
-- **No Analytics**: Zero tracking code (no Google Analytics, etc.)
-- **No Cookies**: Application doesn't set any cookies
-- **No External Requests**: Only CDN fonts loaded, no API calls
-- **No Data Collection**: Tasks never leave user's browser
-- **Open Source**: Code is transparent and auditable
+**Privacy Guarantees :**
+- **No Analytics** : Zero tracking code (no Google Analytics, etc.)
+- **No Cookies** : Application doesn't set any cookies
+- **No External Requests** : Only CDN fonts loaded, no API calls
+- **No Data Collection** : Tasks never leave user's browser
+- **Open Source** : Code is transparent and auditable
 
-**SSL/TLS Security:**
+**SSL/TLS Security :**
 - HTTPS enforced via nginx configuration
 - Let's Encrypt certificates with auto-renewal
 - Modern TLS protocols only
 - Secure headers can be added to nginx config
 
-**Data Ownership:**
+**Data Ownership :**
 - Users have complete control over their data
 - Export via browser DevTools
 - Delete by clearing LocalStorage
@@ -729,99 +729,99 @@ taskCard.innerHTML = `<h3>${escapeHtml(task.title)}</h3>`;
 
 ### Fully Supported Browsers
 
-**Desktop:**
-- **Google Chrome**: Version 60+ (August 2017 onwards)
-- **Mozilla Firefox**: Version 55+ (August 2017 onwards)
-- **Microsoft Edge**: Version 79+ (January 2020 onwards, Chromium-based)
-- **Safari**: Version 11+ (September 2017 onwards)
-- **Opera**: Version 47+ (August 2017 onwards)
-- **Brave**: All versions (Chromium-based)
+**Desktop :**
+- **Google Chrome** : Version 60+ (August 2017 onwards)
+- **Mozilla Firefox** : Version 55+ (August 2017 onwards)
+- **Microsoft Edge** : Version 79+ (January 2020 onwards, Chromium-based)
+- **Safari** : Version 11+ (September 2017 onwards)
+- **Opera** : Version 47+ (August 2017 onwards)
+- **Brave** : All versions (Chromium-based)
 
-**Mobile:**
-- **Chrome Mobile**: Android 60+
-- **Safari Mobile**: iOS 11+
-- **Firefox Mobile**: Android 55+
-- **Samsung Internet**: Version 7+
-- **Opera Mobile**: Version 47+
+**Mobile :**
+- **Chrome Mobile** : Android 60+
+- **Safari Mobile** : iOS 11+
+- **Firefox Mobile** : Android 55+
+- **Samsung Internet** : Version 7+
+- **Opera Mobile** : Version 47+
 
 ### Required Browser Features
 
-**JavaScript (ES6+):**
-- Arrow functions: `() => {}`
-- Template literals: `` `string ${variable}` ``
-- Destructuring: `const { prop } = object`
-- Array methods: `map()`, `filter()`, `reduce()`, `sort()`
-- Spread operator: `...array`
+**JavaScript (ES6+) :**
+- Arrow functions : `() => {}`
+- Template literals : `` `string ${variable}` ``
+- Destructuring : `const { prop } = object`
+- Array methods : `map()`, `filter()`, `reduce()`, `sort()`
+- Spread operator : `...array`
 - `let` and `const` declarations
 - Classes and modules
 
-**CSS:**
-- **Flexbox**: For flexible layouts
-- **CSS Grid**: For dashboard metrics grid
-- **CSS Custom Properties**: For theming (`:root { --color: value; }`)
-- **Media Queries**: For responsive design
-- **Keyframe Animations**: For flicker effect and transitions
-- **Pseudo-elements**: For decorative effects (`:before`, `:after`)
+**CSS :**
+- **Flexbox** : For flexible layouts
+- **CSS Grid** : For dashboard metrics grid
+- **CSS Custom Properties** : For theming (` :root { --color : value; }`)
+- **Media Queries** : For responsive design
+- **Keyframe Animations** : For flicker effect and transitions
+- **Pseudo-elements** : For decorative effects (` :before`, ` :after`)
 
-**Web APIs:**
-- **LocalStorage API**: For task data persistence
-- **DOM Manipulation**: `createElement`, `querySelector`, etc.
-- **Event Listeners**: `addEventListener`, event delegation
-- **SVG Support**: Inline SVG rendering
+**Web APIs :**
+- **LocalStorage API** : For task data persistence
+- **DOM Manipulation** : `createElement`, `querySelector`, etc.
+- **Event Listeners** : `addEventListener`, event delegation
+- **SVG Support** : Inline SVG rendering
 
-**Fonts:**
-- **Google Fonts CDN**: Loads Courier Prime and VT323
-- **Fallbacks**: Generic `monospace` if CDN fails
+**Fonts :**
+- **Google Fonts CDN** : Loads Courier Prime and VT323
+- **Fallbacks** : Generic `monospace` if CDN fails
 
 ### Unsupported Browsers
 
-**Internet Explorer 11 and Earlier:**
+**Internet Explorer 11 and Earlier :**
 - No ES6 support
 - No CSS Grid support
 - LocalStorage has issues
-- **Recommendation**: Upgrade to modern browser
+- **Recommendation** : Upgrade to modern browser
 
-**Very Old Mobile Browsers:**
+**Very Old Mobile Browsers :**
 - Android Browser 4.x and earlier
 - iOS Safari 10 and earlier
-- **Recommendation**: Update device OS or browser
+- **Recommendation** : Update device OS or browser
 
 ### Feature Detection
 
 Application does not include polyfills or fallbacks. Modern browser is required.
 
-**Checking Compatibility:**
+**Checking Compatibility :**
 ```
 // Browser DevTools Console
-console.log('LocalStorage:', typeof localStorage !== 'undefined');
-console.log('ES6 Arrow Functions:', typeof (() => {}) === 'function');
-console.log('CSS Grid:', CSS.supports('display', 'grid'));
+console.log('LocalStorage :', typeof localStorage !== 'undefined');
+console.log('ES6 Arrow Functions :', typeof (() => {}) === 'function');
+console.log('CSS Grid :', CSS.supports('display', 'grid'));
 ```
 
 ## Author
 
-[Winebald Banituze](https://github.com/banituze)
+[Winebald Banituze](https ://github.com/banituze)
 
 ## Live Application
 
-https://tasks.banituze.tech
+https ://tasks.banituze.tech
 
 ## Acknowledgments
 
-**Technologies:**
+**Technologies :**
 - HTML5, CSS3, Vanilla JavaScript
 - Nginx Web Server
 - Ubuntu Linux
 - Let's Encrypt SSL
 - Google Fonts (Courier Prime, VT323)
 
-**Inspiration:**
+**Inspiration :**
 - Classic UNIX terminal interfaces
 - The Matrix film aesthetic (1999)
 - Privacy-first software movement
 - Minimalist design philosophy
 
-**Tools:**
+**Tools :**
 - Visual Studio Code
 - Git version control
 - Chrome DevTools
