@@ -297,9 +297,9 @@ TaskFlow Pro uses a **client-side static architecture** where all processing hap
 │  │  ┌─────────────────────────────────────────────────────┐  │ │
 │  │  │          Browser LocalStorage API                   │  │ │
 │  │  │  • Stores tasks as JSON string                      │  │ │
-│  │  │  • Key : 'taskflow-tasks'                            │  │ │
+│  │  │  • Key: 'taskflow-tasks'                            │  │ │
 │  │  │  • Persists across sessions                         │  │ │
-│  │  │  • Capacity : ~5-10MB                                │  │ │
+│  │  │  • Capacity: ~5-10MB                                │  │ │
 │  │  └─────────────────────────────────────────────────────┘  │ │
 │  └───────────────────────────────────────────────────────────┘ │
 └────────────────────────────────────────────────────────────────┘
