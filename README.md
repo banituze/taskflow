@@ -390,7 +390,7 @@ Browser receives index.html
 
 1. Clone the repository :
 ```
-git clone https ://github.com/banituze/taskflow.git
+git clone https://github.com/banituze/taskflow.git
 ```
 
 2. Navigate to the project directory :
@@ -800,11 +800,11 @@ console.log('CSS Grid :', CSS.supports('display', 'grid'));
 
 ## Author
 
-[Winebald Banituze](https ://github.com/banituze)
+[Winebald Banituze](https://github.com/banituze)
 
 ## Live Application
 
-https ://tasks.banituze.tech
+https://tasks.banituze.tech
 
 ## Acknowledgments
 
