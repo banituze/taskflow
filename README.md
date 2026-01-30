@@ -82,7 +82,7 @@ Build a professional task management system as a **single HTML file** that:
 2. Stores all data locally using browser LocalStorage API
 3. Requires zero backend infrastructure or databases
 4. Provides advanced features without complexity
-5. Remains lightweight at approximately 20KB
+5. Remains lightweight at approximately 45KB
 6. Delivers a unique, memorable user experience with Matrix terminal aesthetics
 
 ---
@@ -529,7 +529,7 @@ The VPS + Nginx approach provides **deeper infrastructure knowledge** than manag
 - **No Dependency Hell**: Zero npm packages means zero security vulnerabilities
 
 **Trade-offs Accepted:**
-- Larger initial file size (~20KB vs ~5KB split)
+- Larger initial file size (~45KB vs ~5KB split)
 - Less modular code organization
 - More challenging for team collaboration on same file
 
